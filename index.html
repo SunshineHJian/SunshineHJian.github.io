@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="/logincheck" method="request">
+            <div class="login-field">
+                <input type="text" name="username" required="">
+                <label>Username</label>
+            </div>
+            <div class="login-field">
+                <input type="password" name="password" required="">
+                <label>Password</label>
+            </div>
+            <button type="submit" name="">Submit</button>
+        </form>
+        <form action="/" method="request" style="margin-top: 20px;">
+            <button type="submit" name="">RETURN</button>
+        </form>
+    </div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</body>
+</html>
